@@ -1,2 +1,2 @@
 # elena
-Repo degli esercizi di Elena
+Repo degli esercizi per il corso di Elena

@@ -13,6 +13,7 @@
         <ol>
             <li><a href="esempio1.php"> Esempio1</a></li>
             <li><a href="esempio2.php"> Esempio2</a></li>
+            <li><a href="esempio3.php"> Esempio3</a></li>
         </ol>
     </div>
 </body>

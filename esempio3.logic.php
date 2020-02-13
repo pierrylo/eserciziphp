@@ -39,3 +39,5 @@ try {
 $results = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 var_dump($results);
+
+require 'esempio3.view.php';

@@ -10,10 +10,10 @@
 <body>
     <h2>Scegli cosa visualizzare</h2>
     <div>
-        <form method="GET" action="esempio1.logic.php">
+        <form method="POST" action="esempio3.logic.php">
         <p></p>
-            <input type="radio" name="scelta" value="attori"> Attori<br>
-            <input type="radio" name="scelta" value="registi"> Registi<br>
+            <input type="text" name="database" value=""> Database<br>
+            <input type="text" name="tabella" value=""> Tabella<br>
             <input type="submit" name="submit" value="Invia">
             <button type="reset">Pulisci</button>
         </form>
@@ -27,7 +27,6 @@
     </div>
     <p>
     <a href=<?= "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}/elena" ?>>Ritorna alla pagina iniziale</a>
-        <?php var_dump($_SERVER) ?>
     </p>
 
 </body>

@@ -14,6 +14,8 @@
         <p></p>
             <input type="text" name="database" value=""> Database<br>
             <input type="text" name="tabella" value=""> Tabella<br>
+            <input type="radio" name="query" value="p" checked>Prepared
+            <input type="radio" name="query" value="q">Query<br>
             <input type="submit" name="submit" value="Invia">
             <button type="reset">Pulisci</button>
         </form>

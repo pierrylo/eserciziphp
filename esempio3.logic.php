@@ -1,5 +1,7 @@
 <?php
 
+include 'enablerror.php';
+
 $params = [
     'host' => 'localhost',
     'user' => 'root',
@@ -28,15 +30,32 @@ try {
 
 $tablename = $_POST['tabella'];
 
-$stmt = $pdo->prepare("select * from {$tablename}");
+$results = null;
 
-try {
-    $stmt->execute();
-} catch (PDOException $ex) {
-    die("Tabella inesistente <br>"  .  $ex->getMessage());
+if ($_POST['query'] == 'p') {
+    $stmt = $pdo->prepare("select * from {$tablename}");
+
+    try {
+        $stmt->execute();
+    } catch (PDOException $ex) {
+        die("Errore <br>"  .  $ex->getMessage());
+    }
+    
+    $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+}else{
+    try {
+        $data = $pdo->query("select * from {$tablename}", PDO::FETCH_OBJ);
+        $results = $data->fetchAll();
+    } catch (PDOException $ex) {
+        die("Errore <br>"  .  $ex->getMessage());
+    } catch (\Throwable $th){
+        die("Errore <br>"  .  $th->getMessage());
+    }
+
+    
 }
 
-$results = $stmt->fetchAll(PDO::FETCH_OBJ);
+
 
 var_dump($results);
 

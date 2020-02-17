@@ -19,7 +19,7 @@
     </div>
     <div>
         <p>
-            <a href=<?= $_SERVER['HTTP_REFERER'] ?>>Ritorna all'esempio2</a>
+            <a href=<?= $_SERVER['HTTP_REFERER'] ?>>Ritorna all'esempio3</a>
         </p>
         <p>
             <a href=<?= "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}/elena" ?>>Ritorna alla pagina iniziale</a>

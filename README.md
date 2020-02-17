@@ -1,3 +1,3 @@
-## elena
-# Esercizi
-Repo degli esercizi per il corso di Elena
+# Esercizi per le lezioni di Elena
+
+Repo degli esercizi per le lezioni di Elena

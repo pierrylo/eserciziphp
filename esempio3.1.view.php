@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Elenco</title>
+    <title>Elenco Lavori in corso</title>
 </head>
 
 <body>
@@ -11,8 +11,8 @@
         <h2>Todos</h2>
         <ul>
             <?php
-            while ($row = $data->fetch()) {
-                echo "<li><strong>Descrizione: </strong>{$row["description"]}<br/><strong>Completato: </strong>{$row["completed"]}</li>";
+            foreach ($results as $res ) {
+                echo "<li><strong>Descrizione: </strong>{$res->get_description()}<br/><strong>Completato: </strong> {$res->get_completed()}</li>";
             }
             ?>
         </ul>

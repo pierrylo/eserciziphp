@@ -1,6 +1,7 @@
 <?php
 
 include 'enablerror.php';
+require 'Task.php';
 
 $params = [
     'host' => 'localhost',
@@ -20,9 +21,12 @@ if (!isset($dbname) && empty($dbname)) {
 };
 
 try {
+    // see https://www.php.net/manual/en/book.pdo.php
+
     // $pdo= new PDO("mysql:host=127.0.0.1;dbname={$dbname}","root", "MDBroot");
     $dsn = sprintf('mysql:host=%s;dbname=%s', $params['host'], $params['db']);
     $pdo = new PDO($dsn, $params['user'], $params['pwd']);
+
     echo "Connessione stabilita al database {$dbname}";
 } catch (PDOException $ex) {
     die("Connessione fallita <br>"  .  $ex->getMessage());
@@ -41,11 +45,11 @@ if ($_POST['query'] == 'p') {
         die("Errore <br>"  .  $ex->getMessage());
     }
     
-    $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+    $results = $stmt->fetchAll(PDO::FETCH_CLASS, 'Task');
 }else{
     try {
-        $data = $pdo->query("select * from {$tablename}", PDO::FETCH_OBJ);
-        $results = $data->fetchAll();
+        $data = $pdo->query("select * from {$tablename}", PDO::FETCH_ASSOC);
+        // $results = $data->fetchAll();
     } catch (PDOException $ex) {
         die("Errore <br>"  .  $ex->getMessage());
     } catch (\Throwable $th){
@@ -57,6 +61,11 @@ if ($_POST['query'] == 'p') {
 
 
 
-var_dump($results);
+// var_dump($results);
+// die();
 
-require 'esempio3.view.php';
+if ($_POST['query'] == 'p') {
+    require 'esempio3.1.view.php';
+}else{
+    require 'esempio3.view.php';
+}

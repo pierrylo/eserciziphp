@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace Elena\OOP\esempio1;
 
 use Elena\OOP\esempio1\ShopProduct;

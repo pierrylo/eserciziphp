@@ -5,6 +5,11 @@ namespace Elena\Database;
 use PDO;
 use PDOException;
 
+/**
+ * Connessione al database MySql
+ * 
+ * Per la documentazione sui DocBloc tag vedi @link https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_inlinetags.pkg.html
+ */
 class MysqlConnection
 {
 
@@ -17,7 +22,14 @@ class MysqlConnection
     
     private $conn;
 
-
+    /**
+     * Costruttore
+     *
+     * @param [type] $host
+     * @param [type] $user
+     * @param [type] $password
+     * @param [type] $database
+     */
     public function __construct($host, $user, $password, $database)
     {
         $this->params['host'] = $host;

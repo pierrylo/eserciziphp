@@ -34,7 +34,7 @@ class MysqlConnection
      * @param password password del database
      * @param database nome del database
      * 
-     * @return connessione o null se commessione fallita
+     * @return mixed una connessione al db o null se commessione fallita
      */
     public function get_connection()
     {

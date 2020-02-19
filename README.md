@@ -1,6 +1,6 @@
-# Esercizi per le lezioni di Elena
+# Esercizi di programmazione in PHP
 
-## Repo degli esercizi per le lezioni di Elena
+## Repo degli esercizi di programmazione in PHP
 
 ### Link utili
 

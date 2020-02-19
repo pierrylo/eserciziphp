@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Elena\OOP\esempio1;
+namespace oop\esempio1;
 
 /* listing 03.48 */
 class ShopProduct

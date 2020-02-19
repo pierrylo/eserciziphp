@@ -1,10 +1,10 @@
 <?php
-namespace Elena\OOP\esempio1;
+namespace oop\esempio1;
 
-use Elena\OOP\esempio1\ShopProduct;
-use Elena\OOP\esempio1\CdProduct;
-use Elena\OOP\esempio1\BookProduct;
-use Elena\OOP\esempio1\AddressManager;
+use oop\esempio1\ShopProduct;
+use oop\esempio1\CdProduct;
+use oop\esempio1\BookProduct;
+use oop\esempio1\AddressManager;
 
 class Runner
 {

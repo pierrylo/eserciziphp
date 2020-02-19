@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace Elena\OOP\esempio1;
+namespace oop\esempio1;
 
-use Elena\OOP\esempio1\ShopProduct;
+use oop\esempio1\ShopProduct;
 
 /* listing 03.49 */
 class CdProduct extends ShopProduct

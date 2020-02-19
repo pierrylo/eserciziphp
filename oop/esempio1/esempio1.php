@@ -1,15 +1,17 @@
 <?php
 declare(strict_types=1);
 
+// include "autoload.php";
+
 require('ShopProduct.php');
 require('ShopProductWriter.php');
 require('CdProduct.php');
 require('BookProduct.php');
 
-use Elena\OOP\esempio1\BookProduct;
-use Elena\OOP\esempio1\CdProduct;
-use Elena\OOP\esempio1\ShopProduct;
-use Elena\OOP\esempio1\ShopProductWriter;
+use oop\esempio1\BookProduct;
+use oop\esempio1\CdProduct;
+use oop\esempio1\ShopProduct;
+use oop\esempio1\ShopProductWriter;
 
 $product1 = new ShopProduct("Prodotto1", "Ragione sociale produttore1", "Nome principale produttore1", 5.99);
 $product2 = new CdProduct("Bollicine", "Carosello Records", "Carosello", 25.26, 70);

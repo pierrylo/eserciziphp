@@ -1,6 +1,6 @@
 <?php
 
-namespace Elena\Database;
+namespace Database;
 
 use PDO;
 use PDOException;

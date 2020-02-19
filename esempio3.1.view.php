@@ -12,7 +12,9 @@
         <ul>
             <?php
             foreach ($results as $res ) {
-                echo "<li><strong>Descrizione: </strong>{$res->get_description()}<br/><strong>Completato: </strong> {$res->get_completed()}</li>";
+                echo "<li><strong>Descrizione: </strong>{$res->get_description()}<br/>
+                <strong>Completato: </strong> {$res->get_completed()}<br/>
+                <strong>Data: </strong> {$res->get_date()}</li>";
             }
             ?>
         </ul>

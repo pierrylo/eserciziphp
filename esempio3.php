@@ -12,7 +12,7 @@
     <div>
         <form method="POST" action="esempio3.logic.php">
         <p></p>
-            <input type="text" name="database" value=""> Database<br>
+            <input type="text" name="database"> Database<br>
             <input type="text" name="tabella" value=""> Tabella<br>
             <input type="radio" name="query" value="p" checked>Prepared
             <input type="radio" name="query" value="q">Query<br>

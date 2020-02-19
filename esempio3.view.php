@@ -12,7 +12,9 @@
         <ul>
             <?php
             while ($row = $data->fetch()) {
-                echo "<li><strong>Descrizione: </strong>{$row["description"]}<br/><strong>Completato: </strong>{$row["completed"]}</li>";
+                echo "<li><strong>Descrizione: </strong>{$row["description"]}<br/>
+                <strong>Completato: </strong>{$row["completed"]}<br/>
+                <strong>Data: </strong> {$row["date"]}</li>";
             }
             ?>
         </ul>

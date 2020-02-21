@@ -1,29 +1,23 @@
 <?php
+
 declare(strict_types=1);
 
 namespace oop\esempio1;
 
-use oop\esempio1\ShopProduct;
+require('ShopProductAbstractWriter.php');
 
-class ShopProductWriter
+use oop\esempio1\ShopProductAbstractWriter;
+
+class TextProductWriter extends ShopProductAbstractWriter
 {
-/* listing 03.47 */
-    private $products = [];
-/* /listing 03.47 */
-
-    public function addProduct(ShopProduct $shopProduct)
-    {
-        $this->products[] = $shopProduct;
-    }
-
     public function write()
     {
-        $str =  "";
+        $str = "PRODUCTS:\n";
         foreach ($this->products as $shopProduct) {
             $str .= "{$shopProduct->getTitle()}: ";
             $str .= $shopProduct->getProducer();
             $str .= " ({$shopProduct->getPrice()})\n";
         }
-        print $str;
+        print "\r\n" . $str . "\r\n";
     }
 }

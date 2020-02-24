@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-// include "autoload.php";
+// include "../../autoload.php";
 
-require('ShopProduct.php');
-require('ShopProductClassWriter.php');
-require('CdProduct.php');
-require('BookProduct.php');
-require('TextProductWriter.php');
+include 'ShopProduct.php';
+include 'ShopProductClassWriter.php';
+include 'CdProduct.php';
+include 'BookProduct.php';
+include 'TextProductWriter.php';
 
 use oop\esempio1\BookProduct;
 use oop\esempio1\CdProduct;

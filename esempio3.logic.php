@@ -7,8 +7,10 @@ $dbname = $_POST['database'];
 
 $params = [
     'host' => 'localhost',
-    'user' => 'todos',
-    'pwd' => '45GLItsxZCt0vtRs',
+    // 'user' => 'todos',
+    // 'pwd' => '45GLItsxZCt0vtRs',
+    'user' => 'root',
+    'pwd' => '',
     'db'  => $dbname
 ];
 

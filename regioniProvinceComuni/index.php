@@ -49,7 +49,7 @@
 	</script>
 </head>
 <?php
-include 'enablerror.php';
+include '../enablerror.php';
 include_once 'select.class.php';
 $opt = new SelectList();
 ?>

@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 // $password = "MDBroot";
-$password = "";
+// $password = "";
 $db = "todos";
 
 ?>
